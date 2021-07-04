@@ -1,3 +1,4 @@
 name: Pravin Viswa | Tech World
+theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
