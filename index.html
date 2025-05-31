@@ -11,17 +11,16 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      background-color: #1c1c1c;
+      color: #fff;
     }
     h1, h2 {
       font-weight: 600;
     }
-    .section-title {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
     a {
       text-decoration: none;
+      color: inherit;
     }
     .w3-button {
       transition: 0.3s;
@@ -29,99 +28,50 @@
     .w3-button:hover {
       transform: scale(1.03);
     }
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-    .flex-box {
-      flex: 1;
-      padding: 40px 20px;
-      min-width: 300px;
+    .dark-section {
+      background-color: #2e2e2e;
+      padding: 60px 20px;
+      text-align: center;
     }
-    .creative {
-      background-color: white;
-    }
-    .current {
-      background-color: #d0eaf7;
-    }
-    .universe {
-      background-color: #111;
-      color: white;
-    }
-    .universe a {
-      color: #8fe3ff;
+    .dark-section a {
+      color: #aeefff;
     }
     footer {
       font-size: 14px;
+      background-color: #111;
+      color: #aaa;
     }
   </style>
 </head>
-<body class="w3-content" style="max-width:1300px">
+<body>
 
-<!-- Sidebar -->
-<div class="w3-row">
-  <div class="w3-half w3-dark-grey w3-container w3-center" style="min-height:100vh">
-    <div class="w3-padding-64">
-      <h1 class="w3-xxlarge">Hello & Welcome</h1>
-      <p class="w3-large">I'm Pravin Viswa</p>
-    </div>
-    <div class="w3-padding-large">
-      <a href="#about" class="w3-button w3-dark-grey w3-block w3-hover-teal w3-padding-16"><i class="fas fa-user"></i> About</a>
-      <a href="https://pravinviswa.github.io/resume" class="w3-button w3-dark-grey w3-block w3-hover-indigo w3-padding-16"><i class="fas fa-file-alt"></i> Resume</a>
-      <a href="https://pravinviswa.github.io/certifications" class="w3-button w3-dark-grey w3-block w3-hover-blue w3-padding-16"><i class="fas fa-certificate"></i> Certifications</a>
-      <a href="https://pravinviswa.github.io/projects" class="w3-button w3-dark-grey w3-block w3-hover-purple w3-padding-16"><i class="fas fa-code"></i> Projects</a>
-      <a href="https://www.youtube.com/@pravinviswa" class="w3-button w3-dark-grey w3-block w3-hover-red w3-padding-16"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="https://pravinviswa.github.io/blog" class="w3-button w3-dark-grey w3-block w3-hover-brown w3-padding-16"><i class="fas fa-blog"></i> Blog</a>
-      <a href="https://pravinviswa.github.io/SocialMedia" class="w3-button w3-dark-grey w3-block w3-hover-black w3-padding-16"><i class="fas fa-hashtag"></i> Social Media</a>
-    </div>
-  </div>
-
-  <!-- Right side -->
-  <div class="w3-half w3-light-grey w3-container" style="min-height:100vh">
-    <!-- About Section -->
-    <div id="about" class="w3-padding-64 w3-center">
-      <h2 class="section-title">About Me</h2>
-      <div class="w3-left-align w3-padding-large">
-        <p>Hello! I’m <strong>Pravin Viswa</strong>, a curious tech enthusiast and software developer passionate about crafting thoughtful solutions.</p>
-        <p>This website is my personal space to showcase my journey, work, creativity, and everything in between.</p>
-        <p>Whether you’re a fellow dev, a potential collaborator, or just browsing – thanks for visiting!</p>
-      </div>
-    </div>
+<!-- Welcome Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding: 80px 20px;">
+  <h1 class="w3-xxxlarge">Hello & Welcome</h1>
+  <p class="w3-large">I'm <strong>Pravin Viswa</strong> 👨‍💻</p>
+  <div class="w3-padding-32">
+    <a href="https://drive.google.com/file/d/1LPKf280_TOAvYaiW7UY6ShDk3oydRap5/view?usp=drive_link" target="_blank" class="w3-button w3-indigo w3-margin"><i class="fas fa-file-alt"></i> Resume</a>
+    <a href="https://drive.google.com/drive/u/1/folders/16GqLAnQ9ftUhSRFje9BQPEfTbA1lBe4E" target="_blank" class="w3-button w3-teal w3-margin"><i class="fas fa-certificate"></i> Certifications</a>
+    <a href="https://pravinviswa.github.io/projects" class="w3-button w3-purple w3-margin"><i class="fas fa-code"></i> Projects</a>
+    <a href="https://pravinviswa.github.io/blog" class="w3-button w3-brown w3-margin"><i class="fas fa-blog"></i> Blog</a>
+    <a href="https://pravinviswa.github.io/SocialMedia" class="w3-button w3-black w3-margin"><i class="fas fa-hashtag"></i> Social Media</a>
   </div>
 </div>
 
-<!-- Horizontal 3-Section Layout -->
-<div class="flex-container">
-  <!-- Creative Playground -->
-  <div class="flex-box creative w3-center">
-    <h2 class="section-title">🎨 My Creative Playground</h2>
-    <p><strong>Tools:</strong> VS Code, GitHub, Figma, Notion</p>
-    <p><strong>Tech Mood:</strong> Learning something new every week!</p>
-    <p><strong>Music:</strong> Lo-fi, Tamil hits & jazz 🎧</p>
-    <p><strong>Fun Fact:</strong> Built a sanitizing robot just for fun 😄</p>
-  </div>
-
-  <!-- What I'm Up To -->
-  <div class="flex-box current w3-center">
-    <h2 class="section-title">💻 What I'm Up To</h2>
-    <p><strong>Learning:</strong> React, Tailwind & Prompt Engineering</p>
-    <p><strong>Reading:</strong> “Deep Work” – Cal Newport</p>
-    <p><strong>Watching:</strong> Tech vlogs & Thalapathy updates 🎬</p>
-    <p><strong>Side Project:</strong> AI-powered site incoming!</p>
-  </div>
-
-  <!-- Digital Universe -->
-  <div class="flex-box universe w3-center">
-    <h2 class="section-title">🌐 My Digital Universe</h2>
-    <p>🌍 <a href="https://github.com/pravinviswa" target="_blank">GitHub</a></p>
-    <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank">YouTube</a></p>
-    <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank">Instagram</a></p>
-    <p>🏡 <a href="https://pravinviswa.github.io" target="_blank">Main Website</a></p>
-  </div>
+<!-- About Section -->
+<div class="dark-section">
+  <h2 class="section-title">👨‍💼 About Me</h2>
+  <p>Hello! I’m <strong>Pravin Viswa</strong>, a curious tech enthusiast and software developer passionate about crafting thoughtful solutions.</p>
+  <p>This website is my personal space to showcase my journey, work, creativity, and everything in between.</p>
+  <p>Whether you’re a fellow dev, a potential collaborator, or just browsing – thanks for visiting!</p>
 </div>
 
 <!-- Connect With Me -->
-<div class="w3-container w3-center w3-padding-64" style="background-color: #fff;">
+<div class="dark-section" style="background-color: #202020;">
   <h2 class="section-title">📲 Connect With Me</h2>
   <p>
     <a href="https://www.youtube.com/playlist?list=YOUR_LIFE_VIEWS_PLAYLIST_ID" target="_blank" class="w3-button w3-red w3-margin"><i class="fab fa-youtube"></i> Life Views</a>
@@ -138,8 +88,8 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-center w3-padding-16">
-  <p>Built with passion by <a href="https://pravinviswa.github.io" style="color:#66cdaa;" target="_blank">Pravin Viswa</a></p>
+<footer class="w3-center w3-padding-16">
+  <p>Built with passion by <a href="https://pravinviswa.github.io" target="_blank">Pravin Viswa</a></p>
 </footer>
 
 </body>
