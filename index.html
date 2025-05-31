@@ -1,316 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Pravin Viswa | Personal Website</title>
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Explore the personal website of Pravin Viswa – showcasing resume, projects, achievements, creativity, and more."
-  />
+  <title>Pravin Viswa | Personal Website</title>
   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="icon"
+    href="https://avatars.githubusercontent.com/u/86893005?v=4"
+    type="image/png"
   />
   <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      background-color: #000000; /* deep black background */
+      color: #e0f7f1; /* light teal-ish white text */
     }
     a {
-      color: #1de9b6;
+      color: #1de9b6; /* bright teal */
       text-decoration: none;
       transition: color 0.3s ease;
     }
-    a:hover {
-      color: #00bfa5;
+    a:hover,
+    a:focus {
+      color: #00bfa5; /* darker teal on hover */
+      outline: none;
     }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
     h1,
     h2,
     h3 {
-      font-weight: 600;
-      color: #ffffff;
+      margin: 0 0 16px 0;
+      font-weight: 700;
+      color: #1de9b6; /* teal headings */
     }
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
     }
-    h2.section-title {
-      font-size: 2.2rem;
-      margin-bottom: 1.2rem;
-      border-bottom: 2px solid #1de9b6;
-      padding-bottom: 0.3rem;
+    h2 {
+      font-size: 2.25rem;
+      border-bottom: 3px solid #1de9b6;
+      padding-bottom: 8px;
       max-width: max-content;
+      margin-bottom: 24px;
     }
     h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.8rem;
-      color: #80cbc4;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      color: #b0b0b0;
+      color: #00bfa5; /* slightly darker teal */
+      margin-top: 32px;
     }
 
-    /* Layout */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      display: flex;
-      gap: 40px;
-      min-height: 100vh;
-    }
-    .sidebar {
-      flex: 1;
-      background-color: #1e1e1e;
-      padding: 40px 30px;
-      border-radius: 12px;
+    /* Navigation on left */
+    nav {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      box-shadow: 0 0 15px rgba(29, 233, 182, 0.3);
-    }
-    .sidebar h1 {
-      color: #1de9b6;
-      font-weight: 700;
-    }
-    .sidebar p {
-      color: #80cbc4;
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
       gap: 12px;
-      margin-top: 20px;
+      margin-bottom: 40px;
     }
-    .nav-links a {
-      background-color: transparent;
+    nav a {
+      background: transparent;
       border: 2px solid #1de9b6;
-      padding: 12px 20px;
-      border-radius: 25px;
+      padding: 12px 24px;
+      border-radius: 30px;
       font-weight: 600;
       text-align: center;
       color: #1de9b6;
-      box-shadow: 0 0 10px #1de9b6;
-      transition: all 0.3s ease;
-      font-size: 1.1rem;
+      box-shadow: 0 0 8px #1de9b6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
     }
-    .nav-links a:hover,
-    .nav-links a:focus {
+    nav a:hover,
+    nav a:focus {
       background-color: #1de9b6;
-      color: #121212;
-      box-shadow: 0 0 20px #1de9b6;
+      color: #000;
+      box-shadow: 0 0 20px #00bfa5;
       outline: none;
     }
 
-    /* Main content */
-    .main-content {
-      flex: 3;
-      background-color: #212121;
-      border-radius: 12px;
-      padding: 40px 50px;
-      box-shadow: 0 0 25px rgba(29, 233, 182, 0.4);
-      overflow-y: auto;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    /* Flex layout for horizontal boxes */
+    /* Flex container for horizontal boxes */
     .flex-container {
       display: flex;
-      gap: 30px;
+      gap: 24px;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-top: 40px;
     }
     .flex-box {
-      background-color: #2a2a2a;
-      padding: 25px 30px;
+      background-color: #111; /* super dark grey container */
+      padding: 24px 32px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(29, 233, 182, 0.2);
       flex: 1;
       min-width: 280px;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 0 12px #1de9b6;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      color: #a0f0e0;
     }
     .flex-box:hover {
       background-color: #1de9b6;
-      color: #121212;
-      box-shadow: 0 0 20px #1de9b6;
+      color: #000;
+      box-shadow: 0 0 24px #00bfa5;
     }
     .flex-box:hover a {
-      color: #121212;
+      color: #000;
     }
 
     /* Buttons */
     .btn {
       display: inline-block;
+      margin-top: 16px;
       background-color: #1de9b6;
-      color: #121212;
-      padding: 12px 24px;
+      color: #000;
+      padding: 12px 28px;
       border-radius: 30px;
       font-weight: 700;
       font-size: 1rem;
-      text-align: center;
-      margin-top: 15px;
       box-shadow: 0 0 15px #1de9b6;
+      cursor: pointer;
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
     }
     .btn:hover,
     .btn:focus {
       background-color: #00bfa5;
-      box-shadow: 0 0 25px #00bfa5;
+      box-shadow: 0 0 24px #00bfa5;
       outline: none;
-      color: #fff;
+      color: #000;
     }
 
-    /* Social links */
-    .social-links {
-      margin-top: 10px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+    /* Content styling */
+    p,
+    ul {
+      color: #cceee8;
+      line-height: 1.6;
+      margin-bottom: 16px;
     }
-    .social-links a {
-      color: #1de9b6;
-      font-size: 28px;
-      transition: color 0.3s ease;
+    ul {
+      padding-left: 20px;
     }
-    .social-links a:hover {
-      color: #00bfa5;
-    }
-
-    /* Scrollbar for main content */
-    .main-content::-webkit-scrollbar {
-      width: 10px;
-    }
-    .main-content::-webkit-scrollbar-track {
-      background: #121212;
-    }
-    .main-content::-webkit-scrollbar-thumb {
-      background-color: #1de9b6;
-      border-radius: 20px;
+    li {
+      margin-bottom: 8px;
     }
 
     /* Responsive */
     @media (max-width: 900px) {
-      .container {
-        flex-direction: column;
-        padding: 20px;
-      }
-      .sidebar,
-      .main-content {
-        min-height: auto;
-        padding: 20px;
-      }
       .flex-container {
         flex-direction: column;
       }
       .flex-box {
         min-width: 100%;
       }
+      nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      nav a {
+        flex: 1 1 calc(33% - 12px);
+        font-size: 0.9rem;
+        padding: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar" role="navigation" aria-label="Primary navigation">
-      <h1>Pravin Viswa</h1>
-      <p>Software Developer & Tech Explorer</p>
-      <nav class="nav-links">
-        <a href="#about" tabindex="1">About</a>
-        <a href="#projects" tabindex="2">Projects</a>
-        <a href="#work" tabindex="3">Work</a>
-        <a href="#gallery" tabindex="4">Gallery</a>
-        <a href="#games" tabindex="5">Games</a>
-        <a href="#extras" tabindex="6">Extras</a>
-      </nav>
-    </aside>
+  <div class="container" role="main" aria-label="Personal Website of Pravin Viswa">
+    <h1>Pravin Viswa</h1>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- About -->
-      <section id="about" tabindex="0" aria-labelledby="about-title">
-        <h2 id="about-title" class="section-title">About Me</h2>
-        <p>
-          Hey there! I’m <strong>Pravin Viswa</strong>, a passionate software developer who loves creating clean and efficient code. I’m always exploring new tech and challenges to level up my skills.
-        </p>
-        <p>
-          This website is my personal hub to share my projects, achievements, and all the cool stuff I’m up to.
-        </p>
-        <p>
-          Thanks for stopping by—hope you find something interesting!
-        </p>
-      </section>
+    <nav aria-label="Primary navigation">
+      <a href="#about" tabindex="1">About</a>
+      <a href="#projects" tabindex="2">Projects & Achievements</a>
+      <a href="#work" tabindex="3">Work</a>
+      <a href="#gallery" tabindex="4">Gallery</a>
+      <a href="#games" tabindex="5">Games</a>
+      <a href="#extras" tabindex="6">Extras</a>
+    </nav>
 
-      <!-- Projects & Achievements -->
-      <section id="projects" tabindex="0" aria-labelledby="projects-title">
-        <h2 id="projects-title" class="section-title">Projects & Achievements</h2>
-        <h3>Notable Projects</h3>
-        <ul>
-          <li><strong>Sanitizing Robot:</strong> Autonomous sanitizer built during the pandemic.</li>
-          <li><strong>Smart Agricultural Monitoring:</strong> IoT-based farm environment tracking.</li>
-          <li><strong>Personal Blog Website:</strong> Full-stack blog platform with custom design.</li>
-        </ul>
-        <h3>Achievements</h3>
-        <ul>
-          <li>Certified Full Stack Developer (Coursera)</li>
-          <li>Winner of XYZ Hackathon 2023</li>
-          <li>Published 5+ tech articles</li>
-          <li>Maintainer of open-source projects with 1000+ stars</li>
-        </ul>
-      </section>
+    <section id="about" tabindex="0" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        Hey! I’m <strong>Pravin Viswa</strong>, a software developer passionate about writing clean, scalable code and exploring tech.
+        This site is my personal space to share projects, achievements, and cool stuff I’m working on.
+      </p>
+      <p>Thanks for dropping by! 👋</p>
+    </section>
 
-      <!-- Horizontal sections: Work, Gallery, Games, Extras -->
-      <section class="flex-container" aria-label="Additional sections">
-        <!-- Work -->
-        <article id="work" class="flex-box" tabindex="0" aria-labelledby="work-title">
-          <h2 id="work-title">💼 Work</h2>
-          <p>Associate Product Engineer @ Temenos</p>
-          <p>Software Developer passionate about clean, efficient code.</p>
-          <p>Focus: JavaScript, Java, Spring, Automation, and Testing.</p>
-          <a href="https://linkedin.com/in/pravin-viswa" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-        </article>
+    <section id="projects" tabindex="0" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects & Achievements</h2>
+      <h3>Notable Projects</h3>
+      <ul>
+        <li><strong>Sanitizing Robot:</strong> Autonomous sanitizer robot developed during the pandemic.</li>
+        <li><strong>Smart Agricultural Monitoring System:</strong> IoT solution for farm environment monitoring.</li>
+        <li><strong>Personal Blog Website:</strong> Custom full-stack blog platform.</li>
+      </ul>
+      <h3>Achievements</h3>
+      <ul>
+        <li>Certified Full Stack Developer (Coursera)</li>
+        <li>Winner of XYZ Hackathon 2023</li>
+        <li>Published 5+ tech articles</li>
+        <li>Maintainer of popular open-source projects with 1000+ stars</li>
+      </ul>
+    </section>
 
-        <!-- Gallery -->
-        <article id="gallery" class="flex-box" tabindex="0" aria-labelledby="gallery-title">
-          <h2 id="gallery-title">📸 Gallery</h2>
-          <p>A collection of my nature photos, travel shots, and memorable moments.</p>
-          <a href="https://instagram.com/pravin.viswa" class="btn" target="_blank" rel="noopener">Instagram</a>
-        </article>
+    <div class="flex-container" aria-label="Additional sections">
+      <article id="work" class="flex-box" tabindex="0" aria-labelledby="work-title">
+        <h2 id="work-title">💼 Work</h2>
+        <p>Associate Product Engineer @ Temenos</p>
+        <p>Focused on JavaScript, Java, Spring framework, automation, and testing.</p>
+        <a
+          href="https://linkedin.com/in/pravin-viswa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          >LinkedIn</a
+        >
+      </article>
 
-        <!-- Games -->
-        <article id="games" class="flex-box" tabindex="0" aria-labelledby="games-title">
-          <h2 id="games-title">🎮 Games</h2>
-          <p>I’m a casual gamer who loves strategy and puzzle games.</p>
-          <p>Currently mastering Chess & Valorant.</p>
-          <a href="https://steamcommunity.com/id/pravinviswa" class="btn" target="_blank" rel="noopener">Steam</a>
-        </article>
+      <article id="gallery" class="flex-box" tabindex="0" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">📸 Gallery</h2>
+        <p>Collection of my nature photos, travel shots, and memorable moments.</p>
+        <a
+          href="https://instagram.com/pravin.viswa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          >Instagram</a
+        >
+      </article>
 
-        <!-- Extras -->
-        <article id="extras" class="flex-box" tabindex="0" aria-labelledby="extras-title">
-          <h2 id="extras-title">✨ Extras</h2>
-          <p>Blog posts, coding snippets, and side projects to share ideas and creativity.</p>
-          <a href="#blog" class="btn">Check It Out</a>
-        </article>
-      </section>
-    </main>
+      <article id="games" class="flex-box" tabindex="0" aria-labelledby="games-title">
+        <h2 id="games-title">🎮 Games</h2>
+        <p>Casual gamer who loves strategy and puzzle games.</p>
+        <p>Currently mastering Chess & Valorant.</p>
+        <a
+          href="https://steamcommunity.com/id/pravinviswa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          >Steam</a
+        >
+      </article>
+
+      <article id="extras" class="flex-box" tabindex="0" aria-labelledby="extras-title">
+        <h2 id="extras-title">✨ Extras</h2>
+        <p>Blog posts, coding snippets, and side projects to share ideas and creativity.</p>
+        <a href="#extras" class="btn">Check It Out</a>
+      </article>
+    </div>
   </div>
 </body>
 </html>
