@@ -1,257 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title>Pravin Viswa | Tech Cop</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pravin Viswa | Personal Website</title>
-  <link
-    rel="icon"
-    href="https://avatars.githubusercontent.com/u/86893005?v=4"
-    type="image/png"
-  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000000; /* deep black background */
-      color: #e0f7f1; /* light teal-ish white text */
-    }
-    a {
-      color: #1de9b6; /* bright teal */
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover,
-    a:focus {
-      color: #00bfa5; /* darker teal on hover */
-      outline: none;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 20px;
+    /* Override W3.CSS default colors for black + teal vibe */
+
+    body.w3-content {
+      max-width: 1300px;
+      background-color: #000; /* black background */
+      color: #e0f7f1; /* teal-ish white text */
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    h1,
-    h2,
-    h3 {
-      margin: 0 0 16px 0;
-      font-weight: 700;
-      color: #1de9b6; /* teal headings */
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    h2 {
-      font-size: 2.25rem;
-      border-bottom: 3px solid #1de9b6;
-      padding-bottom: 8px;
-      max-width: max-content;
-      margin-bottom: 24px;
-    }
-    h3 {
-      color: #00bfa5; /* slightly darker teal */
-      margin-top: 32px;
+    /* Left menu panel */
+    .w3-black {
+      background-color: #000 !important; /* pure black */
+      color: #1de9b6 !important; /* teal text for menu */
+      box-shadow: 0 0 12px #1de9b6;
     }
 
-    /* Navigation on left */
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 40px;
-    }
-    nav a {
-      background: transparent;
-      border: 2px solid #1de9b6;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: 600;
-      text-align: center;
-      color: #1de9b6;
+    .w3-black a.w3-button {
+      background-color: #000 !important;
+      color: #1de9b6 !important;
+      border: 1.5px solid #1de9b6;
+      border-radius: 8px;
       box-shadow: 0 0 8px #1de9b6;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      user-select: none;
+      transition: all 0.3s ease;
     }
-    nav a:hover,
-    nav a:focus {
-      background-color: #1de9b6;
-      color: #000;
+
+    .w3-black a.w3-button:hover,
+    .w3-black a.w3-button:focus {
+      background-color: #1de9b6 !important;
+      color: #000 !important;
       box-shadow: 0 0 20px #00bfa5;
       outline: none;
     }
 
-    /* Flex container for horizontal boxes */
-    .flex-container {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 40px;
-    }
-    .flex-box {
-      background-color: #111; /* super dark grey container */
-      padding: 24px 32px;
-      border-radius: 12px;
-      flex: 1;
-      min-width: 280px;
-      box-shadow: 0 0 12px #1de9b6;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      color: #a0f0e0;
-    }
-    .flex-box:hover {
-      background-color: #1de9b6;
-      color: #000;
-      box-shadow: 0 0 24px #00bfa5;
-    }
-    .flex-box:hover a {
-      color: #000;
+    /* Right about section */
+    .w3-blue-grey {
+      background-color: #121212 !important; /* very dark grey-black */
+      color: #c0f0e8 !important; /* lighter tealish white */
     }
 
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      margin-top: 16px;
-      background-color: #1de9b6;
-      color: #000;
-      padding: 12px 28px;
-      border-radius: 30px;
+    /* Section headings */
+    h1, h2 {
+      color: #1de9b6 !important; /* teal headings */
       font-weight: 700;
-      font-size: 1rem;
-      box-shadow: 0 0 15px #1de9b6;
-      cursor: pointer;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Swing By section removed, so no styles for it */
+
+    /* Footer */
+    footer.w3-black {
+      background-color: #000 !important;
+      color: #1de9b6 !important;
       text-align: center;
+      font-size: 0.9rem;
+      padding: 16px;
+      box-shadow: 0 -2px 12px #1de9b6;
+    }
+
+    footer.w3-black a {
+      color: #1de9b6 !important;
       text-decoration: none;
-      user-select: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    .btn:hover,
-    .btn:focus {
-      background-color: #00bfa5;
-      box-shadow: 0 0 24px #00bfa5;
+
+    footer.w3-black a:hover,
+    footer.w3-black a:focus {
+      color: #00bfa5 !important;
       outline: none;
-      color: #000;
-    }
-
-    /* Content styling */
-    p,
-    ul {
-      color: #cceee8;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .flex-container {
-        flex-direction: column;
-      }
-      .flex-box {
-        min-width: 100%;
-      }
-      nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-      nav a {
-        flex: 1 1 calc(33% - 12px);
-        font-size: 0.9rem;
-        padding: 10px 0;
-      }
     }
   </style>
 </head>
-<body>
-  <div class="container" role="main" aria-label="Personal Website of Pravin Viswa">
-    <h1>Pravin Viswa</h1>
-
-    <nav aria-label="Primary navigation">
-      <a href="#about" tabindex="1">About</a>
-      <a href="#projects" tabindex="2">Projects & Achievements</a>
-      <a href="#work" tabindex="3">Work</a>
-      <a href="#gallery" tabindex="4">Gallery</a>
-      <a href="#games" tabindex="5">Games</a>
-      <a href="#extras" tabindex="6">Extras</a>
-    </nav>
-
-    <section id="about" tabindex="0" aria-labelledby="about-title">
-      <h2 id="about-title">About Me</h2>
-      <p>
-        Hey! I’m <strong>Pravin Viswa</strong>, a software developer passionate about writing clean, scalable code and exploring tech.
-        This site is my personal space to share projects, achievements, and cool stuff I’m working on.
-      </p>
-      <p>Thanks for dropping by! 👋</p>
-    </section>
-
-    <section id="projects" tabindex="0" aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects & Achievements</h2>
-      <h3>Notable Projects</h3>
-      <ul>
-        <li><strong>Sanitizing Robot:</strong> Autonomous sanitizer robot developed during the pandemic.</li>
-        <li><strong>Smart Agricultural Monitoring System:</strong> IoT solution for farm environment monitoring.</li>
-        <li><strong>Personal Blog Website:</strong> Custom full-stack blog platform.</li>
-      </ul>
-      <h3>Achievements</h3>
-      <ul>
-        <li>Certified Full Stack Developer (Coursera)</li>
-        <li>Winner of XYZ Hackathon 2023</li>
-        <li>Published 5+ tech articles</li>
-        <li>Maintainer of popular open-source projects with 1000+ stars</li>
-      </ul>
-    </section>
-
-    <div class="flex-container" aria-label="Additional sections">
-      <article id="work" class="flex-box" tabindex="0" aria-labelledby="work-title">
-        <h2 id="work-title">💼 Work</h2>
-        <p>Associate Product Engineer @ Temenos</p>
-        <p>Focused on JavaScript, Java, Spring framework, automation, and testing.</p>
-        <a
-          href="https://linkedin.com/in/pravin-viswa"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-          >LinkedIn</a
-        >
-      </article>
-
-      <article id="gallery" class="flex-box" tabindex="0" aria-labelledby="gallery-title">
-        <h2 id="gallery-title">📸 Gallery</h2>
-        <p>Collection of my nature photos, travel shots, and memorable moments.</p>
-        <a
-          href="https://instagram.com/pravin.viswa"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-          >Instagram</a
-        >
-      </article>
-
-      <article id="games" class="flex-box" tabindex="0" aria-labelledby="games-title">
-        <h2 id="games-title">🎮 Games</h2>
-        <p>Casual gamer who loves strategy and puzzle games.</p>
-        <p>Currently mastering Chess & Valorant.</p>
-        <a
-          href="https://steamcommunity.com/id/pravinviswa"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-          >Steam</a
-        >
-      </article>
-
-      <article id="extras" class="flex-box" tabindex="0" aria-labelledby="extras-title">
-        <h2 id="extras-title">✨ Extras</h2>
-        <p>Blog posts, coding snippets, and side projects to share ideas and creativity.</p>
-        <a href="#extras" class="btn">Check It Out</a>
-      </article>
+<body class="w3-content" style="max-width:1300px">
+  <!-- First Grid: Logo & About -->
+  <div class="w3-row">
+    <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+      <div class="w3-padding-64">
+        <h1>WELCOME</h1>
+      </div>
+      <div class="w3-padding-64">
+        <a href="#" class="w3-button w3-block w3-hover-teal w3-padding-16">Home</a>
+        <a href="https://pravinviswa.github.io/work" class="w3-button w3-block w3-hover-teal w3-padding-16">Work</a>
+        <a href="https://pravinviswa.github.io/tech" class="w3-button w3-block w3-hover-teal w3-padding-16">Tech</a>
+        <a href="https://www.youtube.com/channel/UCe3Z3gsB7wE9xpCrZ0F6_tw" class="w3-button w3-block w3-hover-teal w3-padding-16">Youtube</a>
+        <a href="https://rive.google.com/drive/folders/1GxtvnpJAzqbli0Zd8q9CFAQTmT_fqyVM" class="w3-button w3-block w3-hover-teal w3-padding-16">Personal</a>
+        <a href="https://pravinviswa.github.io/blog" class="w3-button w3-block w3-hover-teal w3-padding-16">Blog</a>
+        <a href="https://pravinviswa.github.io/SocialMedia" class="w3-button w3-block w3-hover-teal w3-padding-16">Social Media</a>
+        <a href="#contact" class="w3-button w3-block w3-hover-teal w3-padding-16">Contact</a>
+      </div>
+    </div>
+    <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+      <div class="w3-padding-64 w3-center">
+        <h1>About</h1>
+        <div class="w3-left-align w3-padding-large" style="color:#c0f0e8;">
+          <p>Hello World!</p>
+          <p>Website under construction.</p>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Removed contact section as per your earlier request -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-black w3-padding-16">
+    <p>Made with love by <a href="https://pravinviswa.github.io" target="_blank" rel="noopener noreferrer">Pravin Viswa</a></p>
+  </footer>
 </body>
 </html>
