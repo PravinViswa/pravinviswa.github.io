@@ -17,7 +17,6 @@
     }
     h1, h2 {
       font-weight: 600;
-      text-shadow: 1px 1px 2px #000;
     }
     a {
       text-decoration: none;
@@ -28,7 +27,6 @@
     }
     .w3-button:hover {
       transform: scale(1.03);
-      box-shadow: 0 0 8px #fff;
     }
     .section-title {
       font-size: 28px;
@@ -45,7 +43,27 @@
     footer {
       font-size: 14px;
       background-color: #111;
-      color: #ccc;
+      color: #aaa;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #262626;
+      padding: 40px 20px;
+    }
+    .flex-box {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .flex-box a {
+      color: #aeefff;
     }
   </style>
 </head>
@@ -65,9 +83,39 @@
   <div class="w3-content w3-padding-16" style="max-width:800px;">
     <a href="https://drive.google.com/file/d/1LPKf280_TOAvYaiW7UY6ShDk3oydRap5/view?usp=drive_link" target="_blank" class="w3-button w3-indigo w3-margin"><i class="fas fa-file-alt"></i> Resume</a>
     <a href="https://drive.google.com/drive/u/1/folders/16GqLAnQ9ftUhSRFje9BQPEfTbA1lBe4E" target="_blank" class="w3-button w3-teal w3-margin"><i class="fas fa-certificate"></i> Certifications</a>
-    <a href="https://pravinviswa.github.io/projects" class="w3-button w3-purple w3-margin"><i class="fas fa-code"></i> Projects</a>
+    <a href="https://github.com/pravinviswa" target="_blank" class="w3-button w3-purple w3-margin"><i class="fas fa-code"></i> Projects</a>
     <a href="https://pravinviswa.github.io/blog" class="w3-button w3-brown w3-margin"><i class="fas fa-blog"></i> Blog</a>
     <a href="https://youtube.com/@life_views" class="w3-button w3-black w3-margin"><i class="fas fa-hashtag"></i> Vlog</a>
+  </div>
+</div>
+
+<!-- Horizontal 3-Section Layout -->
+<div class="flex-container">
+  <!-- Creative Playground -->
+  <div class="flex-box creative w3-center">
+    <h2 class="section-title">🎨 My Creative Playground</h2>
+    <p><strong>Tools:</strong> VS Code, GitHub, Figma, Notion</p>
+    <p><strong>Tech Mood:</strong> Learning something new every week!</p>
+    <p><strong>Music:</strong> Lo-fi, Tamil hits & jazz 🎧</p>
+    <p><strong>Fun Fact:</strong> Built a sanitizing robot just for fun 😄</p>
+  </div>
+
+  <!-- What I'm Up To -->
+  <div class="flex-box current w3-center">
+    <h2 class="section-title">💻 What I'm Up To</h2>
+    <p><strong>Learning:</strong> React, Tailwind & Prompt Engineering</p>
+    <p><strong>Reading:</strong> “Deep Work” – Cal Newport</p>
+    <p><strong>Watching:</strong> Tech vlogs & Thalapathy updates 🎬</p>
+    <p><strong>Side Project:</strong> AI-powered site incoming!</p>
+  </div>
+
+  <!-- Digital Universe -->
+  <div class="flex-box universe w3-center">
+    <h2 class="section-title">🌐 My Digital Universe</h2>
+    <p>🌍 <a href="https://github.com/pravinviswa" target="_blank">GitHub</a></p>
+    <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank">YouTube</a></p>
+    <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank">Instagram</a></p>
+    <p>🏡 <a href="https://pravinviswa.github.io" target="_blank">Main Website</a></p>
   </div>
 </div>
 
