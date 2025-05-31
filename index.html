@@ -1,229 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pravin Viswa | Tech Cop</title>
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <title>Pravin Viswa | Personal Website</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the personal website of Pravin Viswa – showcasing resume, projects, creativity, and more.">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    /* Base and body */
-    body.w3-content {
-      max-width: 1300px;
-      background-color: #000;
-      color: #e0f7f1;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
     }
-
-    /* Left sidebar menu */
-    .w3-black {
-      background-color: #000 !important;
-      color: #1de9b6 !important;
-      box-shadow: 0 0 12px #1de9b6;
-    }
-
-    .w3-black a.w3-button {
-      background-color: #000 !important;
-      color: #1de9b6 !important;
-      border: 1.5px solid #1de9b6;
-      border-radius: 8px;
-      box-shadow: 0 0 8px #1de9b6;
-      transition: all 0.3s ease;
-      margin-bottom: 8px;
-    }
-
-    .w3-black a.w3-button:hover,
-    .w3-black a.w3-button:focus {
-      background-color: #1de9b6 !important;
-      color: #000 !important;
-      box-shadow: 0 0 20px #00bfa5;
-      outline: none;
-    }
-
-    /* Right main content sections */
-    .w3-blue-grey {
-      background-color: #121212 !important;
-      color: #c0f0e8 !important;
-      /* removed overflow-y and height to avoid scroll */
-      padding: 40px 32px;
-    }
-
-    /* Section headings */
     h1, h2 {
-      color: #1de9b6 !important;
-      font-weight: 700;
-      margin-bottom: 24px;
-    }
-
-    /* Paragraphs */
-    p {
-      line-height: 1.6;
-      color: #b2f0de;
-    }
-
-    /* Footer */
-    footer.w3-black {
-      background-color: #000 !important;
-      color: #1de9b6 !important;
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 16px;
-      box-shadow: 0 -2px 12px #1de9b6;
-    }
-
-    footer.w3-black a {
-      color: #1de9b6 !important;
-      text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
-
-    footer.w3-black a:hover,
-    footer.w3-black a:focus {
-      color: #00bfa5 !important;
-      outline: none;
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-
-    /* Horizontal 3-split for bottom sections */
-    .bottom-row {
+    a {
+      text-decoration: none;
+    }
+    .w3-button {
+      transition: 0.3s;
+    }
+    .w3-button:hover {
+      transform: scale(1.03);
+    }
+    .flex-container {
       display: flex;
-      gap: 16px;
-      margin-top: 32px;
-      padding: 0 32px 32px 32px;
+      flex-wrap: wrap;
     }
-
-    .bottom-box {
+    .flex-box {
       flex: 1;
-      background-color: #121212;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 0 12px #1de9b6;
-      color: #b2f0de;
-      /* removed max-height and overflow-y to avoid scroll */
+      padding: 40px 20px;
+      min-width: 300px;
     }
-
-    .bottom-box h2 {
-      margin-top: 0;
-      margin-bottom: 16px;
-      color: #1de9b6;
+    .creative {
+      background-color: white;
     }
-
-    /* Links inside boxes */
-    .bottom-box a {
-      color: #1de9b6;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
+    .current {
+      background-color: #d0eaf7;
     }
-
-    .bottom-box a:hover,
-    .bottom-box a:focus {
-      color: #00bfa5;
-      outline: none;
+    .universe {
+      background-color: #111;
+      color: white;
+    }
+    .universe a {
+      color: #8fe3ff;
+    }
+    footer {
+      font-size: 14px;
     }
   </style>
 </head>
-<body class="w3-content">
+<body class="w3-content" style="max-width:1300px">
 
-  <!-- Left menu & About -->
-  <div class="w3-row">
-    <div class="w3-half w3-black w3-container w3-center" style="height:700px;">
-      <div class="w3-padding-64">
-        <h1>WELCOME</h1>
-      </div>
-      <div class="w3-padding-64">
-        <a href="#" class="w3-button w3-block w3-hover-teal w3-padding-16">Home</a>
-        <a href="https://pravinviswa.github.io/work" class="w3-button w3-block w3-hover-teal w3-padding-16">Work</a>
-        <a href="https://pravinviswa.github.io/gallery" class="w3-button w3-block w3-hover-teal w3-padding-16">Gallery</a>
-        <a href="https://pravinviswa.github.io/projects" class="w3-button w3-block w3-hover-teal w3-padding-16">Projects</a>
-        <a href="https://pravinviswa.github.io/games" class="w3-button w3-block w3-hover-teal w3-padding-16">Games</a>
-        <a href="https://pravinviswa.github.io/blog" class="w3-button w3-block w3-hover-teal w3-padding-16">Blog</a>
-        <a href="https://pravinviswa.github.io/SocialMedia" class="w3-button w3-block w3-hover-teal w3-padding-16">Social Media</a>
-        <a href="#extras" class="w3-button w3-block w3-hover-teal w3-padding-16">Extras</a>
-      </div>
+<!-- Sidebar -->
+<div class="w3-row">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="min-height:100vh">
+    <div class="w3-padding-64">
+      <h1 class="w3-xxlarge">Hello & Welcome</h1>
+      <p class="w3-large">I'm Pravin Viswa</p>
     </div>
-
-    <div class="w3-half w3-blue-grey w3-container">
-      <div class="w3-padding-64 w3-center">
-        <h1>About</h1>
-        <div class="w3-left-align w3-padding-large" style="color:#b2f0de;">
-          <p>Hello World! I'm Pravin Viswa, a passionate software developer blending tech and creativity.</p>
-          <p>This website is my digital space where I share my work, projects, games, blog posts, and more.</p>
-          <p>Feel free to explore and connect with me through social media links.</p>
-        </div>
-
-        <div class="bottom-row">
-          <!-- Work Section -->
-          <article class="bottom-box">
-            <h2>Work</h2>
-            <p>Explore my professional journey, key projects, and collaborations.</p>
-            <ul>
-              <li><a href="https://pravinviswa.github.io/work#fiduciary-deposit">Fiduciary Deposit Orders</a></li>
-              <li><a href="https://pravinviswa.github.io/work#esg">ESG for Instruments and Portfolios</a></li>
-              <li><a href="https://pravinviswa.github.io/work#questionnaire">Questionnaire Assessment</a></li>
-              <li><a href="https://pravinviswa.github.io/work#accrued-interest">Accrued Interest & Settlement Currency</a></li>
-              <li><a href="https://pravinviswa.github.io/work#performance-benchmark">Performance Benchmark</a></li>
-            </ul>
-          </article>
-
-          <!-- Projects & Achievements -->
-          <article class="bottom-box">
-            <h2>Projects & Achievements</h2>
-            <p>From academic robotics to cutting-edge software — my portfolio includes:</p>
-            <ul>
-              <li>Sanitizing Robot</li>
-              <li>Smart Agricultural Monitoring System</li>
-              <li>Personal Blog Website</li>
-              <li>Certified in JavaScript, Spring Framework, Selenium Automation</li>
-              <li>Successfully transitioned from testing to development roles</li>
-            </ul>
-          </article>
-
-          <!-- Gallery -->
-          <article class="bottom-box">
-            <h2>Gallery</h2>
-            <p>Snapshots from my tech journey, events, and personal life.</p>
-            <p><a href="https://pravinviswa.github.io/gallery">Check out the full gallery here</a></p>
-          </article>
-        </div>
-
-        <div class="bottom-row" style="margin-top:24px;">
-          <!-- Games -->
-          <article class="bottom-box">
-            <h2>Games</h2>
-            <p>Mini projects and games I've developed or enjoy playing.</p>
-            <p><a href="https://pravinviswa.github.io/games">Explore Games</a></p>
-          </article>
-
-          <!-- Blog -->
-          <article class="bottom-box">
-            <h2>Blog</h2>
-            <p>Insights, tutorials, and tech thoughts.</p>
-            <p><a href="https://pravinviswa.github.io/blog">Read my Blog</a></p>
-          </article>
-
-          <!-- Social Media & Extras -->
-          <article class="bottom-box" id="extras">
-            <h2>Social Media & Extras</h2>
-            <p>Connect with me and discover more side projects, coding snippets, and creative ideas.</p>
-            <p>
-              <a href="https://pravinviswa.github.io/SocialMedia">Social Media Links</a>
-            </p>
-            <p>
-              <a href="https://pravinviswa.github.io/extras">Extras</a>
-            </p>
-          </article>
-        </div>
-      </div>
+    <div class="w3-padding-large">
+      <a href="#about" class="w3-button w3-dark-grey w3-block w3-hover-teal w3-padding-16"><i class="fas fa-user"></i> About</a>
+      <a href="https://pravinviswa.github.io/resume" class="w3-button w3-dark-grey w3-block w3-hover-indigo w3-padding-16"><i class="fas fa-file-alt"></i> Resume</a>
+      <a href="https://pravinviswa.github.io/certifications" class="w3-button w3-dark-grey w3-block w3-hover-blue w3-padding-16"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="https://pravinviswa.github.io/projects" class="w3-button w3-dark-grey w3-block w3-hover-purple w3-padding-16"><i class="fas fa-code"></i> Projects</a>
+      <a href="https://www.youtube.com/@pravinviswa" class="w3-button w3-dark-grey w3-block w3-hover-red w3-padding-16"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://pravinviswa.github.io/blog" class="w3-button w3-dark-grey w3-block w3-hover-brown w3-padding-16"><i class="fas fa-blog"></i> Blog</a>
+      <a href="https://pravinviswa.github.io/SocialMedia" class="w3-button w3-dark-grey w3-block w3-hover-black w3-padding-16"><i class="fas fa-hashtag"></i> Social Media</a>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-black w3-padding-16">
-    <p>
-      Made with love by
-      <a href="https://pravinviswa.github.io" target="_blank" rel="noopener noreferrer">Pravin Viswa</a>
-    </p>
-  </footer>
+  <!-- Right side -->
+  <div class="w3-half w3-light-grey w3-container" style="min-height:100vh">
+    <!-- About Section -->
+    <div id="about" class="w3-padding-64 w3-center">
+      <h2 class="section-title">About Me</h2>
+      <div class="w3-left-align w3-padding-large">
+        <p>Hello! I’m <strong>Pravin Viswa</strong>, a curious tech enthusiast and software developer passionate about crafting thoughtful solutions.</p>
+        <p>This website is my personal space to showcase my journey, work, creativity, and everything in between.</p>
+        <p>Whether you’re a fellow dev, a potential collaborator, or just browsing – thanks for visiting!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Horizontal 3-Section Layout -->
+<div class="flex-container">
+  <!-- Creative Playground -->
+  <div class="flex-box creative w3-center">
+    <h2 class="section-title">🎨 My Creative Playground</h2>
+    <p><strong>Tools:</strong> VS Code, GitHub, Figma, Notion</p>
+    <p><strong>Tech Mood:</strong> Learning something new every week!</p>
+    <p><strong>Music:</strong> Lo-fi, Tamil hits & jazz 🎧</p>
+    <p><strong>Fun Fact:</strong> Built a sanitizing robot just for fun 😄</p>
+  </div>
+
+  <!-- What I'm Up To -->
+  <div class="flex-box current w3-center">
+    <h2 class="section-title">💻 What I'm Up To</h2>
+    <p><strong>Learning:</strong> React, Tailwind & Prompt Engineering</p>
+    <p><strong>Reading:</strong> “Deep Work” – Cal Newport</p>
+    <p><strong>Watching:</strong> Tech vlogs & Thalapathy updates 🎬</p>
+    <p><strong>Side Project:</strong> AI-powered site incoming!</p>
+  </div>
+
+  <!-- Digital Universe -->
+  <div class="flex-box universe w3-center">
+    <h2 class="section-title">🌐 My Digital Universe</h2>
+    <p>🌍 <a href="https://github.com/pravinviswa" target="_blank">GitHub</a></p>
+    <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank">YouTube</a></p>
+    <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank">Instagram</a></p>
+    <p>🏡 <a href="https://pravinviswa.github.io" target="_blank">Main Website</a></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-center w3-padding-16">
+  <p>Built with passion by <a href="https://pravinviswa.github.io" style="color:#66cdaa;" target="_blank">Pravin Viswa</a></p>
+</footer>
+
 </body>
 </html>
