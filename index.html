@@ -17,7 +17,7 @@
       font-weight: 600;
     }
     .section-title {
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 20px;
     }
     a {
@@ -28,6 +28,31 @@
     }
     .w3-button:hover {
       transform: scale(1.03);
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .flex-box {
+      flex: 1;
+      padding: 40px 20px;
+      min-width: 300px;
+    }
+    .creative {
+      background-color: white;
+    }
+    .current {
+      background-color: #d0eaf7;
+    }
+    .universe {
+      background-color: #111;
+      color: white;
+    }
+    .universe a {
+      color: #8fe3ff;
+    }
+    footer {
+      font-size: 14px;
     }
   </style>
 </head>
@@ -65,42 +90,33 @@
   </div>
 </div>
 
-<!-- Creative Playground Section -->
-<div class="w3-row w3-container w3-white w3-center" style="min-height:100vh">
-  <div class="w3-padding-64">
+<!-- Horizontal 3-Section Layout -->
+<div class="flex-container">
+  <!-- Creative Playground -->
+  <div class="flex-box creative w3-center">
     <h2 class="section-title">🎨 My Creative Playground</h2>
-    <div class="w3-large w3-padding-32">
-      <p><strong>Favorite Tools:</strong> VS Code, GitHub, Figma, Notion</p>
-      <p><strong>Tech Mood:</strong> Learning something new every week!</p>
-      <p><strong>Music While Coding:</strong> Lo-fi beats, Tamil hits & some focus jazz 🎧</p>
-      <p><strong>Fun Fact:</strong> I once built a sanitizing robot just for kicks. 😄</p>
-    </div>
+    <p><strong>Tools:</strong> VS Code, GitHub, Figma, Notion</p>
+    <p><strong>Tech Mood:</strong> Learning something new every week!</p>
+    <p><strong>Music:</strong> Lo-fi, Tamil hits & jazz 🎧</p>
+    <p><strong>Fun Fact:</strong> Built a sanitizing robot just for fun 😄</p>
   </div>
-</div>
 
-<!-- What I'm Up To Section -->
-<div class="w3-row w3-container w3-light-blue w3-center" style="min-height:100vh">
-  <div class="w3-padding-64">
+  <!-- What I'm Up To -->
+  <div class="flex-box current w3-center">
     <h2 class="section-title">💻 What I'm Up To</h2>
-    <div class="w3-large w3-padding-32">
-      <p><strong>Currently Learning:</strong> React, TailwindCSS & Prompt Engineering</p>
-      <p><strong>Reading:</strong> “Deep Work” by Cal Newport</p>
-      <p><strong>Watching:</strong> Tech vlogs, Tutorials & Thalapathy updates 🧠🎬</p>
-      <p><strong>Side Project:</strong> Building my AI-powered personal site!</p>
-    </div>
+    <p><strong>Learning:</strong> React, Tailwind & Prompt Engineering</p>
+    <p><strong>Reading:</strong> “Deep Work” – Cal Newport</p>
+    <p><strong>Watching:</strong> Tech vlogs & Thalapathy updates 🎬</p>
+    <p><strong>Side Project:</strong> AI-powered site incoming!</p>
   </div>
-</div>
 
-<!-- Digital Universe Section -->
-<div class="w3-row w3-container w3-black w3-center" style="min-height:100vh; color: white;">
-  <div class="w3-padding-64">
+  <!-- Digital Universe -->
+  <div class="flex-box universe w3-center">
     <h2 class="section-title">🌐 My Digital Universe</h2>
-    <div class="w3-large w3-padding-32">
-      <p>🌍 <a href="https://github.com/pravinviswa" target="_blank" style="color:lightblue">GitHub</a> – Codebase of my projects</p>
-      <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank" style="color:lightcoral">YouTube</a> – My channel for tech + life</p>
-      <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank" style="color:plum">Instagram</a> – Life in pixels</p>
-      <p>🏡 <a href="https://pravinviswa.github.io" target="_blank" style="color:khaki">Main Website</a> – Hub of everything!</p>
-    </div>
+    <p>🌍 <a href="https://github.com/pravinviswa" target="_blank">GitHub</a></p>
+    <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank">YouTube</a></p>
+    <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank">Instagram</a></p>
+    <p>🏡 <a href="https://pravinviswa.github.io" target="_blank">Main Website</a></p>
   </div>
 </div>
 
