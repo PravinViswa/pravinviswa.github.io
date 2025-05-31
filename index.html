@@ -3,11 +3,11 @@
 <head>
   <title>Pravin Viswa | Personal Website</title>
   <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore the personal website of Pravin Viswa – showcasing resume, projects, creativity, and more." />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the personal website of Pravin Viswa – showcasing resume, projects, creativity, and more.">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,10 +31,9 @@
     .section-title {
       font-size: 28px;
       margin-bottom: 20px;
-      white-space: nowrap;
     }
     .dark-section {
-      background-color: #202020;
+      background-color: #2e2e2e;
       padding: 60px 20px;
       text-align: center;
     }
@@ -46,98 +45,47 @@
       background-color: #111;
       color: #aaa;
     }
-
-    /* Flex container for the 3 sections */
     .flex-container {
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
       flex-wrap: wrap;
+      justify-content: center;
+      background-color: #262626;
+      padding: 40px 20px;
     }
     .flex-box {
-      background-color: #2a2a2a;
-      padding: 30px 20px;
-      border-radius: 10px;
-      flex: 1 1 300px;
+      flex: 1;
       min-width: 280px;
-      color: #ddd;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .flex-box.creative {
-      background-color: #292929;
-    }
-    .flex-box.current {
-      background-color: #2e2e2e;
-    }
-    .flex-box.universe {
-      background-color: #292929;
-    }
-    .flex-box h2 {
-      color: #a0e7ff;
-      margin-bottom: 20px;
-    }
-    .flex-box p {
-      margin: 8px 0;
-      font-size: 16px;
-      line-height: 1.4;
-      max-width: 280px;
+      max-width: 350px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     .flex-box a {
-      color: #7bdff2;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    .flex-box a:hover {
-      color: #40c4ff;
-      text-decoration: underline;
-    }
-
-    /* Welcome section */
-    .welcome-section {
-      padding: 80px 20px;
-      background-color: #2a2a2a;
-      text-align: center;
-    }
-    .welcome-section h1 {
-      font-size: 4rem;
-      margin-bottom: 10px;
-    }
-    .welcome-section p {
-      font-size: 1.4rem;
-      margin: 10px 0;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      color: #ddd;
-    }
-    .welcome-buttons {
-      margin-top: 30px;
+      color: #aeefff;
     }
   </style>
 </head>
 <body>
 
 <!-- Welcome Section -->
-<div class="welcome-section">
-  <h1>Welcome</h1>
-  <p>Hello! I'm <strong>Pravin Viswa</strong> 👨‍💻</p>
-  <p>A curious tech enthusiast and software developer passionate about crafting thoughtful solutions.</p>
-  <p>This website is my personal space to showcase my journey, work, creativity, and everything in between.</p>
-  <p>Whether you’re a fellow dev, a potential collaborator, or just browsing – thanks for visiting!</p>
+<div class="w3-container w3-center" style="padding: 80px 20px; background-color: #2a2a2a;">
+  <h1 class="w3-xxxlarge">Welcome</h1>
+  <p class="w3-large">Hello! I'm <strong>Pravin Viswa</strong> 👨‍💻</p>
+  <div class="w3-content w3-padding-32" style="max-width:800px;">
+    <p>A curious tech enthusiast and software developer passionate about crafting thoughtful solutions.</p>
+    <p>This website is my personal space to showcase my journey, work, creativity, and everything in between.</p>
+    <p>Whether you’re a fellow dev, a potential collaborator, or just browsing – thanks for visiting!</p>
+  </div>
 
-  <!-- Buttons -->
-  <div class="welcome-buttons">
+  <!-- Center-aligned buttons -->
+  <div class="w3-content w3-padding-16" style="max-width:800px;">
     <a href="https://drive.google.com/file/d/1LPKf280_TOAvYaiW7UY6ShDk3oydRap5/view?usp=drive_link" target="_blank" class="w3-button w3-indigo w3-margin"><i class="fas fa-file-alt"></i> Resume</a>
     <a href="https://drive.google.com/drive/u/1/folders/16GqLAnQ9ftUhSRFje9BQPEfTbA1lBe4E" target="_blank" class="w3-button w3-teal w3-margin"><i class="fas fa-certificate"></i> Certifications</a>
     <a href="https://github.com/pravinviswa" target="_blank" class="w3-button w3-purple w3-margin"><i class="fas fa-code"></i> Projects</a>
-    <a href="https://www.blogger.com/about/?hl=en-GB" target="_blank" class="w3-button w3-brown w3-margin"><i class="fas fa-briefcase"></i> Blog</a>
-    <a href="https://youtube.com/@life_views" target="_blank" class="w3-button w3-black w3-margin"><i class="fas fa-hashtag"></i> Vlog</a>
+    <a href="https://pravinviswa.github.io/blog" class="w3-button w3-brown w3-margin"><i class="fas fa-blog"></i> Blog</a>
+    <a href="https://youtube.com/@life_views" class="w3-button w3-black w3-margin"><i class="fas fa-hashtag"></i> Vlog</a>
   </div>
 </div>
 
@@ -145,17 +93,16 @@
 <div class="flex-container">
   <!-- Creative Playground -->
   <div class="flex-box creative w3-center">
-    <h2 class="section-title">🎨 Grain Stuffs h2>
-    <p><strong>Languages:</strong> Java, JavaScript, TypeScript</p>
-    <p><strong>Frameworks:</strong> Spring Boot, React, Node.js</p>
-    <p><strong>Tools:</strong> VS Code, Git, Postman</p>
+    <h2 class="section-title">🎨 My Creative Playground</h2>
+    <p><strong>Tools:</strong> VS Code, GitHub, Figma, Notion</p>
+    <p><strong>Tech Mood:</strong> Learning something new every week!</p>
+    <p><strong>Music:</strong> Lo-fi, Tamil hits & jazz 🎧</p>
     <p><strong>Fun Fact:</strong> Built a sanitizing robot just for fun 😄</p>
   </div>
 
   <!-- What I'm Up To -->
   <div class="flex-box current w3-center">
     <h2 class="section-title">💻 What I'm Up To</h2>
-    <p><strong>Currently working at:</strong> Temenos as Full Stack Developer</p>
     <p><strong>Learning:</strong> React, Tailwind & Prompt Engineering</p>
     <p><strong>Reading:</strong> “Deep Work” – Cal Newport</p>
     <p><strong>Watching:</strong> Tech vlogs & Thalapathy updates 🎬</p>
@@ -164,15 +111,16 @@
 
   <!-- Digital Universe -->
   <div class="flex-box universe w3-center">
-    <h2 class="section-title">🌐 Galleries & Digital Universe</h2>
-    <p>🖼️ <a href="https://drive.google.com/drive/folders/1-YhnfSdGY5zvIXQ9Rb2Z3zMEAKTiOO27?usp=sharing" target="_blank">Galleries</a></p>
+    <h2 class="section-title">🌐 My Digital Universe</h2>
     <p>🌍 <a href="https://github.com/pravinviswa" target="_blank">GitHub</a></p>
     <p>📺 <a href="https://www.youtube.com/@pravinviswa" target="_blank">YouTube</a></p>
+    <p>📸 <a href="https://instagram.com/pravinviswa" target="_blank">Instagram</a></p>
+    <p>🏡 <a href="https://pravinviswa.github.io" target="_blank">Main Website</a></p>
   </div>
 </div>
 
 <!-- Connect With Me -->
-<div class="dark-section">
+<div class="dark-section" style="background-color: #202020;">
   <h2 class="section-title">📲 Connect With Me</h2>
   <p>
     <a href="https://www.linkedin.com/in/pravin-viswanathan" target="_blank" class="w3-button w3-blue w3-margin"><i class="fab fa-linkedin"></i> LinkedIn</a>
