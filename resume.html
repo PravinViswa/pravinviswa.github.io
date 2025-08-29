@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pravin Viswa | Resume" />
+  <title>Pravin Viswa | Resume</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .pdf-container {
+      width: 90%;
+      max-width: 900px;
+      height: 85vh;
+      border: 2px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .download-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📄 My Resume</h1>
+
+  <!-- PDF Viewer -->
+  <div class="pdf-container">
+    <iframe src="./assets/Pravin-Viswa-Resume.pdf"></iframe>
+  </div>
+
+  <!-- Download Button -->
+  <div class="btn-container">
+    <a href="./assets/Pravin-Viswa-Resume.pdf" download="Pravin-Viswa-Resume.pdf" class="download-btn">
+      <i class="fas fa-download"></i> Download Résumé
+    </a>
+  </div>
+
+</body>
+</html>
