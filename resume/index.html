@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <style>
+    /* General Body Styling */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,12 +22,14 @@
       padding: 20px;
     }
 
+    /* Heading */
     h1 {
       margin: 20px 0 10px;
       font-size: 26px;
       color: #fff;
     }
 
+    /* PDF Container */
     .pdf-container {
       width: 90%;
       max-width: 900px;
@@ -36,6 +39,7 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
       overflow: hidden;
       margin-top: 15px;
+      background-color: #000;
     }
 
     iframe {
@@ -44,12 +48,14 @@
       border: none;
     }
 
+    /* Button Container */
     .btn-container {
       margin-top: 20px;
       display: flex;
       justify-content: center;
     }
 
+    /* Download Button */
     .download-btn {
       background-color: #007bff;
       color: #fff;
@@ -71,6 +77,20 @@
       background-color: #0056b3;
       transform: scale(1.05);
     }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .pdf-container {
+        height: 70vh;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .download-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,12 +99,12 @@
 
   <!-- PDF Viewer -->
   <div class="pdf-container">
-    <iframe src="./assets/RESUME_PV.pdf"></iframe>
+    <iframe src="../assets/RESUME_PV.pdf"></iframe>
   </div>
 
   <!-- Download Button -->
   <div class="btn-container">
-    <a href="./assets/RESUME_PV.pdf" download="Resume-Pravin.pdf" class="download-btn">
+    <a href="../assets/RESUME_PV.pdf" download="Resume-Pravin.pdf" class="download-btn">
       <i class="fas fa-download"></i> Download
     </a>
   </div>
