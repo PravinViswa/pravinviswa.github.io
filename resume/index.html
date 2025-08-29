@@ -6,11 +6,9 @@
   <meta name="description" content="Pravin Viswa | Resume" />
   <title>Pravin Viswa | Resume</title>
   <link rel="icon" href="https://avatars.githubusercontent.com/u/86893005?v=4" type="image/png">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <style>
-    /* General Body Styling */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,14 +20,12 @@
       padding: 20px;
     }
 
-    /* Heading */
     h1 {
       margin: 20px 0 10px;
       font-size: 26px;
       color: #fff;
     }
 
-    /* PDF Container */
     .pdf-container {
       width: 90%;
       max-width: 900px;
@@ -48,14 +44,12 @@
       border: none;
     }
 
-    /* Button Container */
     .btn-container {
       margin-top: 20px;
       display: flex;
       justify-content: center;
     }
 
-    /* Download Button */
     .download-btn {
       background-color: #007bff;
       color: #fff;
@@ -78,7 +72,6 @@
       transform: scale(1.05);
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       .pdf-container {
         height: 70vh;
@@ -98,8 +91,8 @@
   <h1>📄 My Resume</h1>
 
   <!-- PDF Viewer -->
-  <div class="pdf-container">
-    <iframe src="../assets/RESUME_PV.pdf"></iframe>
+  <div id="pdfContainer" class="pdf-container">
+    <iframe id="resumeFrame" src="../assets/RESUME_PV.pdf"></iframe>
   </div>
 
   <!-- Download Button -->
@@ -108,6 +101,19 @@
       <i class="fas fa-download"></i> Download
     </a>
   </div>
+
+  <script>
+    // Detect iPhone or iPad
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isIOS) {
+      // Hide iframe on iPhone
+      document.getElementById("pdfContainer").style.display = "none";
+      
+      // Auto open PDF in new tab for iPhone
+      window.location.href = "../assets/RESUME_PV.pdf";
+    }
+  </script>
 
 </body>
 </html>
