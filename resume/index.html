@@ -12,76 +12,69 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1c1c1c;
+      background-color: #121212;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
       padding: 20px;
     }
 
     h1 {
-      margin: 20px 0 10px;
-      font-size: 26px;
-      color: #fff;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #f8f8f8;
     }
 
-    .pdf-container {
-      width: 90%;
-      max-width: 900px;
-      height: 85vh;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-      margin-top: 15px;
-      background-color: #000;
-      transition: all 0.3s ease-in-out;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #bdbdbd;
     }
 
     .btn-container {
-      margin-top: 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
     }
 
-    .download-btn {
+    .resume-btn, .download-btn {
       background-color: #007bff;
       color: #fff;
       padding: 12px 20px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: 0.3s ease;
-      text-decoration: none;
+      transition: all 0.3s ease;
+      width: 220px;
+      justify-content: center;
     }
 
-    .download-btn:hover {
+    .resume-btn:hover, .download-btn:hover {
       background-color: #0056b3;
       transform: scale(1.05);
     }
 
-    /* Mobile Responsive */
     @media (max-width: 600px) {
-      .pdf-container {
-        height: 70vh;
-      }
       h1 {
-        font-size: 22px;
+        font-size: 24px;
       }
-      .download-btn {
+      p {
+        font-size: 14px;
+      }
+      .resume-btn, .download-btn {
+        width: 180px;
         padding: 10px 16px;
         font-size: 14px;
       }
@@ -91,31 +84,19 @@
 <body>
 
   <h1>📄 My Resume</h1>
+  <p>Click below to view or download my latest resume.</p>
 
-  <!-- PDF Viewer -->
-  <div id="pdfContainer" class="pdf-container">
-    <iframe id="resumeFrame" src="./assets/RESUME_PV.pdf"></iframe>
-  </div>
-
-  <!-- Download Button -->
   <div class="btn-container">
-    <a href="./assets/RESUME_PV.pdf" download="Resume-Pravin.pdf" class="download-btn">
-      <i class="fas fa-download"></i> Download
+    <!-- Open Resume Button -->
+    <a href="../assets/RESUME_PV.pdf" target="_blank" class="resume-btn">
+      <i class="fas fa-eye"></i> View Resume
+    </a>
+
+    <!-- Download Resume Button -->
+    <a href="../assets/RESUME_PV.pdf" download="Pravin_Viswa_Resume.pdf" class="download-btn">
+      <i class="fas fa-download"></i> Download Resume
     </a>
   </div>
-
-  <script>
-    // Detect iPhone or iPad
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-    if (isIOS) {
-      // Hide iframe on iOS devices
-      document.getElementById("pdfContainer").style.display = "none";
-
-      // Open PDF in a new tab
-      window.open("./assets/RESUME_PV.pdf", "_blank");
-    }
-  </script>
 
 </body>
 </html>
